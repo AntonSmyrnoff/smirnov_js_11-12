@@ -70,4 +70,19 @@ $(document).ready(function () {
         itemMarginRight: 25, // боковые отступы между снимками в пикселях
         animateDuration: 500 //время перелистывания в мс
     })
-})
+});
+
+
+$(document).ready(function () {
+	
+	var profile = {
+		name: 'Смирнов Антон Сергеевич',
+		photo: 'img/face.jpg',
+		about: 'Инженер-эксперт в одной очень важной организации при очень важном строительном институте'
+	};
+
+	var template = $('#tmpl').html();
+	var content = tmpl(template, profile);
+	
+	$('#wrapper').append(content);
+});

@@ -1,14 +1,12 @@
 .carousel-hider {
     overflow: hidden;
     float: left;
-    background-color: lightblue;
 }
  
 .carousel-list {    
     list-style: none;
     padding: 0;
     position: relative;
-    background-color: blue;
 }
  
 .carousel-element {
@@ -36,4 +34,20 @@
  
 .carousel-arrow-right {
     margin-left: 25px;
+}
+
+.carousel {
+    height: 200px;
+}
+
+.template {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+
+
+}
+
+.template>h1 {
+    font-size: 40px;    
 }
