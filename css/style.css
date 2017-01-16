@@ -1,5 +1,4 @@
 .carousel-hider {
-    width: 650px;
     overflow: hidden;
     float: left;
     background-color: lightblue;
@@ -7,7 +6,6 @@
  
 .carousel-list {    
     list-style: none;
-    width: 10000px;
     padding: 0;
     position: relative;
     background-color: blue;
@@ -15,12 +13,7 @@
  
 .carousel-element {
     display: block;
-    margin-right: 25px;
     float: left;
-}
- 
-.carousel-element img {
-    max-width: 200px;
 }
  
 .carousel-arrow-left, .carousel-arrow-right {
