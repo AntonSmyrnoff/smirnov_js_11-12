@@ -31,14 +31,33 @@
 		<div class="carousel-arrow-right"><span>Вправо</span></div>
 	</div>
 	
-	<div class="template"> <h1>Profile</h1>	
+	<div id="template"> 
+		
 		<script type="text/template" id="tmpl">
+			<h1 class="profileName">Profile №<%= number %> </h1>
 			<h1><%= name %></h1>
+			<img src="<%= photo %>" alt="MyFace" width="30%">
+			<div class="info">
+				<p><%= about %></p>	
+				<hr>
+				<h2><%= reasonField.fieldHead%></h2>
+				<ul><% for ( var i=0; i<reasonField.reasonVariants.length; i++ ) { %>
+					<li><%= reasonField.reasonVariants[i]%></li> <% } %> 
+					
+				</ul>
+				<hr>
+				<h2></h2>
+				<p class="contacts"></p>
+				<h2></h2>
+				<a  class="contacts" href=""></a>
+				<hr>
+				<h2></h2>
+				<p  class="contacts"></p>
+			</div>
 		</script>
 
-		<div id="wrapper">
-			
-		</div>
+
+		
 	</div>	
 
 </body>

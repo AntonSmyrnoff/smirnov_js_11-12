@@ -38,16 +38,32 @@
 
 .carousel {
     height: 200px;
+    background-color: green;
 }
 
-.template {
+
+
+
+#template {
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+    max-width: 600px;
+    /* background-color: blue; */
 
 
 }
 
-.template>h1 {
+.profileName {
     font-size: 40px;    
+}
+
+#template img {
+    border: 1px solid gray;
+}
+
+.info {
+    width: 500px;
+    margin: auto; 
+    text-align: left;
 }
