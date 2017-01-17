@@ -38,20 +38,17 @@
 
 .carousel {
     height: 200px;
-    background-color: green;
 }
 
 
-
+/* -----ШАБЛОНИЗАТОР----- */
 
 #template {
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
     max-width: 600px;
-    /* background-color: blue; */
-
-
+    font-family: Arial;
 }
 
 .profileName {
@@ -63,7 +60,11 @@
 }
 
 .info {
-    width: 500px;
     margin: auto; 
+    margin-bottom: 100px;
     text-align: left;
+}
+
+.contacts {
+    margin-left: 40px;
 }

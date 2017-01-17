@@ -23,7 +23,6 @@
 				.carousel-hider {
 				    overflow: hidden;
 				    float: left;
-				    background-color: lightblue;
 				}
 				 
 				.carousel-list {    
@@ -87,7 +86,46 @@ $(document).ready(function () {
 								 'Плоды трудов очень важной организации не сильно востребованы за пределами очень узкой сферы деятельности этой организации',
 								 'Еще какая-то причина'
 								]
-		}
+		},
+		contacts: [ {header: 'Мой контактный телефон:',
+					 paragraphe: '+380509836759'},
+				    {header: 'Мой профиль в соцсетях:',
+				     paragraphe: '<a href="https://www.facebook.com/profile.php?id=100001530274310">Facebook</a>'},
+				    {header: 'Мой фидбек:',
+				     paragraphe: 'Забор, конечно, могу построить... Но надеюсь, что в скором будущем буду делать что-то поинтереснее.'},
+				]
+	};
+
+	var template = $('#tmpl').html();
+	var content = tmpl(template, profile);
+	
+	$('#template').append(content);
+});
+
+
+
+//Для эксперимента добавим второй профиль
+$(document).ready(function () {
+	
+	var profile = {
+		number: 2,
+		name: 'Иванов Иван Иванович',
+		photo: 'img/face_2.jpg',
+		about: 'Студент заборостроительного института',
+		reasonField: {
+				fieldHead: 'Хочу учить FrontEnd, потому что:',
+				reasonVariants: ['Заборы строить не интересно', 
+								 'Платят мало', 
+								 'Приходится работать по ночам'
+								]
+		},
+		contacts: [ {header: 'Мой контактный телефон:',
+					 paragraphe: '+380222222222'},
+				    {header: 'Мой профиль в соцсетях:',
+				     paragraphe: '<a href="https://www.vk.com">ВКонтакте</a>'},
+				    {header: 'Мой фидбек:',
+				     paragraphe: 'Если нужно, могу построить вам забор'},
+				]
 	};
 
 	var template = $('#tmpl').html();

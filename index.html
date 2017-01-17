@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html >
 <head>
-	<title>Карусель</title>
+	<title>Карусель и шаблонизатор</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -32,7 +32,6 @@
 	</div>
 	
 	<div id="template"> 
-		
 		<script type="text/template" id="tmpl">
 			<h1 class="profileName">Profile №<%= number %> </h1>
 			<h1><%= name %></h1>
@@ -42,22 +41,16 @@
 				<hr>
 				<h2><%= reasonField.fieldHead%></h2>
 				<ul><% for ( var i=0; i<reasonField.reasonVariants.length; i++ ) { %>
-					<li><%= reasonField.reasonVariants[i]%></li> <% } %> 
-					
+					<li><%= reasonField.reasonVariants[i]%></li> 
+					<% } %> 
 				</ul>
 				<hr>
-				<h2></h2>
-				<p class="contacts"></p>
-				<h2></h2>
-				<a  class="contacts" href=""></a>
-				<hr>
-				<h2></h2>
-				<p  class="contacts"></p>
+				<% for ( var i=0; i<contacts.length; i++ ) { %>
+				<h2><%= contacts[i].header %></h2>
+				<p class="contacts"><%= contacts[i].paragraphe %></p>
+				<% } %>
 			</div>
 		</script>
-
-
-		
 	</div>	
 
 </body>
